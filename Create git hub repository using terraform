@@ -1,0 +1,9 @@
+provider "github" {
+  token = ""
+}
+resource "github_repository" "example" {
+  name        = "example"
+  description = "This repo is created using terraform"
+
+  visibility = "public"
+}
