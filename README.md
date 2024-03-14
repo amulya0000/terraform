@@ -23,3 +23,14 @@
 •	Integration and Extensibility: It integrates well with other tools and has a robust plugin system, enabling users to extend its functionality to meet their specific requirements.
 
 •	These factors contribute to Terraform's popularity as a versatile and efficient infrastructure provisioning tool.  
+
+
+What are providers in terraform?
+
+1. Providers: Providers in Terraform are plugins that interface with different infrastructure platforms. They allow you to define and manage resources within those platforms using Terraform. You can configure providers in your Terraform code to specify the authentication details, regions, and other settings specific to the platform you are working with.
+
+What are Resources in Terraform?
+
+1. Resources: Resources in Terraform represent the infrastructure objects you want to manage. They are defined using resource blocks and specify the desired state of the resource and its configuration. Each resource type has its own set of attributes that define the properties, settings, and relationships of the resource. When you apply your Terraform configuration, Terraform compares the desired state with the current state of the resources and takes actions to create, update, or delete resources as needed.
+
+By understanding providers and resources, you can effectively leverage Terraform to provision and manage infrastructure resources across different platforms, following the infrastructure as code approach.
