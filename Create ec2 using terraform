@@ -10,3 +10,19 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+
+#CREATE MULTIPLE EC2 INSTANCES USING TERRAFORM
+
+provider "aws" {
+  # Configuration options
+  region = "ap-northeast-1"
+}
+resource "aws_instance" "web" {
+  ami           = "ami-034c9ca2bdde7b472"
+  instance_type = "t2.micro"
+  count = 5
+  tags = {
+    Name = "HelloWorld"
+  }
+}
