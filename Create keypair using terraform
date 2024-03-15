@@ -1,3 +1,11 @@
+resource "aws_instance" "web" {
+ami           = "ami-034c9ca2bdde7b472"
+instance_type = "t2.micro"
+key_name = aws_key_pair.tf_key.key_name  # Reference the created key pair by name
+  tags = {
+    Name = "HelloWorld"
+  }
+}
 resource "aws_key_pair" "tf_key" {
   key_name   = "tf_key"
   public_key = tls_private_key.rsa.public_key_openssh
