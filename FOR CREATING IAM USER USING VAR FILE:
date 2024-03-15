@@ -1,0 +1,13 @@
+FOR CREATING IAM USER USING VAR FILE:
+
+resource "aws_iam_user" "name" {
+  name = "${var.username}-user"
+}
+
+**IN PROD.TFVARS FOLDER
+username = "prod"
+**IN STAGING.TFVARS FOLDER
+username = "stage"
+
+**to get output for varfile:
+terraform apply -var-file="staging.tfvars"
