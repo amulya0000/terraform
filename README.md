@@ -34,3 +34,24 @@ What are Resources in Terraform?
 1. Resources: Resources in Terraform represent the infrastructure objects you want to manage. They are defined using resource blocks and specify the desired state of the resource and its configuration. Each resource type has its own set of attributes that define the properties, settings, and relationships of the resource. When you apply your Terraform configuration, Terraform compares the desired state with the current state of the resources and takes actions to create, update, or delete resources as needed.
 
 By understanding providers and resources, you can effectively leverage Terraform to provision and manage infrastructure resources across different platforms, following the infrastructure as code approach.
+
+LOCAL VARIABLES:
+1.  Local variables are declared using "locals" block
+2.  Local variables are accessible within themodule/configuration where they are declared
+
+ In Terraform, input variables are used to define parameters that can be customized when running Terraform modules or configurations. These variables allow users to input values at runtime, enabling flexibility and customization.
+
+1. **Customization**: Input variables enable users to customize the behavior of their Terraform modules or configurations by providing values at runtime.
+  
+2. **Flexibility**: They provide flexibility by allowing users to input different values for variables, such as IP addresses, instance sizes, or resource names, without modifying the core infrastructure code.
+Variable block attributes:
+
+Attributes Of Variables:
+ 1. **Name**: The identifier used to reference the variable.
+2. **Type**: The kind of data the variable can hold (e.g., integer, string, boolean).
+3. **Value**: The actual data stored in the variable.
+4. **Scope**: The part of the program where the variable can be accessed.
+5. **Lifetime**: The duration for which the variable holds its value.
+6. **Accessibility**: The rules governing the visibility and availability of the variable to other parts of the program.
+7. **Mutability**: Whether the value of the variable can be changed after it's initially set.
+       
