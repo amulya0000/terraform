@@ -1,0 +1,44 @@
+provider "aws" {
+  region = "ap-northeast-1"
+}
+resource "aws_instance" "web" {
+  ami           = var.os
+  instance_type = var.size
+
+  tags = {
+    Name = var.name
+  }
+}
+resource "aws_s3_bucket" "bucket" {
+  bucket = var.bucketname
+}
+variable "os" {
+  type        = string
+  default     = "ami-034c9ca2bdde7b472"
+  description = "This is my AMI ID"
+}
+
+variable "size" {
+  type        = string
+  default     = "t2.micro"
+  description = "This is my instance type"
+}
+
+variable "name" {
+  type        = string
+  default     = "Hello World"
+  description = "This is my instance name"
+}
+variable "bucketname" {
+  
+}
+
+output "name" {
+  value = aws_instance.web.public_ip
+}
+
+
+
+****to get output for varfile:
+***terraform apply -var="bucketname=mycloudchaami" 
+
