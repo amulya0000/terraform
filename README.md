@@ -1,4 +1,4 @@
-                                                                                       TERRAFORM NOTES
+                                                              TERRAFORM NOTES
 
 •	Terraform is an open-source infrastructure as code software tool created by HashiCorp. In simple terms, it allows you to define and manage your infrastructure as code, meaning you can write code to describe the infrastructure you want (like servers, databases, and networking components) and then use that code to automatically create and manage those resources in a consistent and repeatable way. This makes it easier to provision and manage infrastructure compared to manually setting up and configuring each component.  
 
