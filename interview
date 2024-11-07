@@ -1,0 +1,21 @@
+Here are the key interview questions with short-form answers:
+
+1. **Why is Terraform an important skill for DevOps and Cloud Engineers?**
+   - Terraform provides a universal approach to infrastructure automation across multiple cloud providers.
+   - As cloud infrastructure becomes more complex, efficient and reproducible tools like Terraform are increasingly in demand.
+
+2. **What is the difference between IaC tools like Terraform and cloud-specific tools?**
+   - IaC tools like Terraform are provider-agnostic, while cloud-specific tools (e.g., CloudFormation) are tied to a single cloud platform.
+   - Terraform's universal approach reduces the need to learn multiple provider-specific tools.
+
+3. **Explain the Terraform workflow and the purpose of the key commands.**
+   - `terraform init` sets up the Terraform configuration, `terraform plan` previews changes, `terraform apply` creates/updates infrastructure, and `terraform destroy` removes infrastructure.
+
+4. **Why is cloud provider knowledge important when using Terraform?**
+   - Terraform relies on the cloud provider's APIs and resources, so understanding the provider's concepts is crucial for effective Terraform usage and troubleshooting.
+
+5. **Explain the purpose and importance of the Terraform state file.**
+   - The state file tracks the resources Terraform has created and their current state, maintaining consistency and allowing Terraform to understand the infrastructure.
+
+6. **What are the advantages of using a tool like Code Spaces for Terraform development?**
+   - Code Spaces provides a pre-configured Terraform development environment, removing the need for local setup and providing a consistent, reproducible workspace.
